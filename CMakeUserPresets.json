@@ -17,8 +17,7 @@
       "name": "qt-debug",
       "displayName": "Qt6 Debug (vcpkg)",
       "inherits": [
-        "qt-base",
-        "Qt-Default"
+        "qt-base"
       ],
       "binaryDir": "${sourceDir}/out/build/debug",
       "cacheVariables": {
@@ -33,8 +32,7 @@
       "name": "qt-release",
       "displayName": "Qt6 Release (vcpkg)",
       "inherits": [
-        "qt-base",
-        "Qt-Default"
+        "qt-base"
       ],
       "binaryDir": "${sourceDir}/out/build/release",
       "cacheVariables": {
