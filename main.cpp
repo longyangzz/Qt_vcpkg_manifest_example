@@ -9,6 +9,8 @@
 #include <QTextStream>
 #include <QOperatingSystemVersion>
 
+#include "Eigen/Version"
+#include "Eigen/Dense"
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 

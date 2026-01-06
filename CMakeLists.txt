@@ -14,8 +14,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # (or specify the toolchain manually when configuring)
 
 # Find Qt via vcpkg if not found fail hard!
-find_package(QT NAMES Qt5 Qt6 REQUIRED)
-
+find_package(QT NAMES Qt5 REQUIRED)
+find_package(Eigen3 CONFIG REQUIRED)
 # The ability to support Qt5 or Qt6 is based on the following stackoverflow answer:
 # https://stackoverflow.com/a/71131723/487892
 
@@ -42,7 +42,7 @@ endif()
 
 qt56_add_executable(${LOCAL_PROJECT_NAME} ${_QT56_EXECUTABLE_OPTIONS} main.cpp)
 
-target_link_libraries(${LOCAL_PROJECT_NAME} PRIVATE ${APP_QT_TARGETS})
+target_link_libraries(${LOCAL_PROJECT_NAME} PRIVATE ${APP_QT_TARGETS} Eigen3::Eigen)
 
 # If using Qt's uic, moc, or rcc:
 set(CMAKE_AUTOMOC ON)

@@ -5,7 +5,8 @@
     {
       "name": "my-test-qt-project",
       "features": [ "qt6" ]
-    }
+    },
+    "eigen3"
   ],
   "features": {
     "qt5": {

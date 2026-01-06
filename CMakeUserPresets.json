@@ -10,14 +10,16 @@
       "hidden": true,
       "generator": "Ninja",
       "cacheVariables": {
-        "CMAKE_TOOLCHAIN_FILE": "E:/testspace/vstudio_vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "CMAKE_TOOLCHAIN_FILE": "E:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "SELECT_QT_VERSION": "Qt5"
       }
     },
     {
       "name": "qt-debug",
       "displayName": "Qt6 Debug (vcpkg)",
       "inherits": [
-        "qt-base"
+        "qt-base",
+        "Qt-Default"
       ],
       "binaryDir": "${sourceDir}/out/build/debug",
       "cacheVariables": {
@@ -32,7 +34,8 @@
       "name": "qt-release",
       "displayName": "Qt6 Release (vcpkg)",
       "inherits": [
-        "qt-base"
+        "qt-base",
+        "Qt-Default"
       ],
       "binaryDir": "${sourceDir}/out/build/release",
       "cacheVariables": {
@@ -70,7 +73,7 @@
   ],
   "vendor": {
     "qt-project.org/Presets": {
-      "checksum": "CFNT5U5Mqr6FVp/CpXd+51XLfUQ="
+      "checksum": "JE/SgFOX6hCu4tKoazsiVN/csxU="
     }
   }
 }
