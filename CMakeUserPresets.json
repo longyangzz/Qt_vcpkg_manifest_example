@@ -11,7 +11,7 @@
       "generator": "Ninja",
       "cacheVariables": {
         "CMAKE_TOOLCHAIN_FILE": "E:/vcpkg/scripts/buildsystems/vcpkg.cmake",
-        "SELECT_QT_VERSION": "Qt5"
+        "SELECT_QT_VERSION": "Qt6"
       }
     },
     {
@@ -69,29 +69,11 @@
           "checksum": "nL9iMztlVTpzeT5Z0lGBqc2aUdA="
         }
       }
-    },
-    {
-      "hidden": true,
-      "name": "513_msvc2022_64",
-      "inherits": "Qt",
-      "environment": {
-        "QTDIR": "G:/library/qt/Qt5.13.2/5.13.2/msvc2015_64"
-      },
-      "architecture": {
-        "strategy": "external",
-        "value": "x64"
-      },
-      "generator": "Ninja",
-      "vendor": {
-        "qt-project.org/Version": {
-          "checksum": "rDau+mowQPLp0M5gn9YGiOepYS8="
-        }
-      }
     }
   ],
   "vendor": {
     "qt-project.org/Presets": {
-      "checksum": "PcF8G3anTjTSGo/Jqpp2+ynfEyE="
+      "checksum": "dKcHNJlRmdyv99Bv4U34B/5Ztjo="
     }
   }
 }

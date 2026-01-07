@@ -57,4 +57,6 @@ To do a clean build you can add the --clean-first argument at the end like this:
 
 cmake --build . --config Release --clean-first
 
+执行release 模式下的  exe[安装成功后]可以到release目录下执行cpak打包
+
 
