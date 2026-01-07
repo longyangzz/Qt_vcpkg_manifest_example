@@ -2585,14 +2585,14 @@ endlocal
     endif()
 
     if (NOT target_qtpaths_path)
-        get_target_property(target_qtpaths_path ${_QT56}::qtpaths LOCATION_RELEASE)
-        get_target_property(target_qtpaths_path_debug ${_QT56}::qtpaths LOCATION_DEBUG)
+        #get_target_property(target_qtpaths_path ${_QT56}::qtpaths LOCATION_RELEASE)
+        #get_target_property(target_qtpaths_path_debug ${_QT56}::qtpaths LOCATION_DEBUG)
     endif()
 
-    message(STATUS target_qtpaths_path=${target_qtpaths_path})
+    #message(STATUS target_qtpaths_path=${target_qtpaths_path})
 
     if(NOT target_qtpaths_path)
-        message(FATAL_ERROR "No qtpaths executable found for deployment purposes.")
+        #message(FATAL_ERROR "No qtpaths executable found for deployment purposes.")
     endif()
 
     if (QT_VERSION_MAJOR EQUAL 5) 
